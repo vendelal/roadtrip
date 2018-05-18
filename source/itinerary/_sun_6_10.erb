@@ -1,0 +1,20 @@
+<section class="trip-segment">
+  <div class="trip-segment__content">
+
+    <h1 class="trip-segment__date">Sunday, June 10</h1>
+
+    <p class="trip-segment__destination"><i class="fas fa-arrow-right"></i>Leave San Diego</p>
+
+    <time class="trip-segment__time">Depart 8:00 AM</time>
+    <%= partial "itinerary/shared/driving_time", locals: { driving_time: "5h" } %>
+    <time class="trip-segment__time">Arrive 1:00 PM</time>
+
+    <p class="trip-segment__destination"><i class="fas fa-map-pin"></i>Lunch in Las Vegas</p>
+
+    <time class="trip-segment__time">Depart 3:00 PM</time>
+    <%= partial "itinerary/shared/driving_time", locals: { driving_time: "3h25" } %>
+    <time class="trip-segment__time">Arrive 6:30 PM</time>
+
+    <p class="trip-segment__destination"><i class="fas fa-map-pin"></i>Arrive at Grand Canyon</p>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+header {
+  background-color: $yellow;
+  padding: $base-spacing;
+  text-align: center;
+
+  h1,
+  h2 {
+    color: $orange;
+    font-size: $base-font-size;
+    letter-spacing: $wide-letter-spacing;
+  }
+
+  date {
+    color: $white;
+    font-size: $small-font-size;
+  }
+}

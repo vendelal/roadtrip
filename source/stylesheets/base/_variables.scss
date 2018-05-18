@@ -1,0 +1,41 @@
+// Font Families
+$base-font-family: "CircularStd", arial, sans-serif;
+$header-font-family: "SwedenSans", arial, sans-serif;
+
+// Font Sizes
+$base-font-size: 1rem;
+$smallest-font-size: $base-font-size * 0.75;
+$small-font-size: $base-font-size * 0.875;
+$large-font-size: $base-font-size * 3.75;
+
+// Colors
+$white: #fff;
+$yellow: #ffce78;
+$yellow-light: #fff7df;
+$orange: #ff7b50;
+$teal-light: #3399a8;
+$teal: #1f5f70;
+$teal-dark: #1a4964;
+$blue-light: #c2eceb;
+$blue: #9cdfe3;
+
+// Backgrounds
+$base-background-color: $white;
+
+// Spacing
+$base-spacing: 1rem;
+$smallest-spacing: $base-spacing * 0.3;
+$small-spacing: $base-spacing * 0.6;
+$large-spacing: $base-spacing * 2;
+$larger-spacing: $base-spacing * 3.125;
+$xl-spacing: $base-spacing * 6.25;
+
+// Transitions
+$base-duration: 300ms;
+$base-timing: ease-in-out;
+
+// Other Sizes
+$wide-letter-spacing: 0.1rem;
+
+// Border Radii
+$large-border-radius: 20px;

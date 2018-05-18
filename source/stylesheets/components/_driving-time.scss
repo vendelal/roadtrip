@@ -1,0 +1,30 @@
+.driving-time {
+  align-items: center;
+  color: $blue;
+  display: flex;
+  justify-content: space-between;
+  margin: $base-spacing;
+}
+
+.driving-time__car-visual {
+  display: flex;
+  flex-direction: column;
+
+   > svg {
+    margin: $smallest-spacing 0;
+  }
+}
+
+.driving-time__time {
+  flex-grow: 1;
+  margin-left: $small-spacing;
+}
+
+.driving-time__directions-link {
+  color: $blue;
+
+   > svg {
+    font-size: $small-font-size;
+    margin-left: $small-spacing;
+  }
+}

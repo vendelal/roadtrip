@@ -1,0 +1,31 @@
+.trip-segment__content {
+  margin: 0 auto;
+  max-width: 75%;
+}
+
+.trip-segment__date {
+  color: $orange;
+  margin: $larger-spacing 0;
+  text-align: center;
+}
+
+.trip-segment__destination {
+  background-color: $yellow-light;
+  border-radius: $large-border-radius;
+  margin: $base-spacing 0;
+  padding: $small-spacing $base-spacing;
+
+   > svg {
+    color: $yellow;
+    margin-right: $base-spacing;
+  }
+}
+
+.trip-segment__time {
+  color: $yellow;
+  font-size: $smallest-font-size;
+  font-weight: bold;
+  letter-spacing: $wide-letter-spacing;
+  margin-left: $base-spacing;
+  text-transform: uppercase;
+}

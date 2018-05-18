@@ -1,0 +1,27 @@
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: $base-font-family;
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+
+  font-smoothing: antialiased;
+}
+
+p {
+  font-size: $base-font-size;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: $header-font-family;
+}
+
+time {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
