@@ -1,6 +1,7 @@
 .trip-segment__content {
   margin: 0 auto;
   max-width: 75%;
+  padding-bottom: $large-spacing;
 }
 
 .trip-segment__date {
@@ -28,4 +29,20 @@
   letter-spacing: $wide-letter-spacing;
   margin-left: $base-spacing;
   text-transform: uppercase;
+}
+
+.trip-segment--night {
+  background-color: $teal;
+  color: $blue;
+  padding: $base-spacing 0;
+}
+
+.trip-segment__overnight-location {
+  color: $white;
+  font-size: $base-font-size;
+
+   > svg {
+    font-size: $small-font-size;
+    margin-right: $small-spacing;
+  }
 }
