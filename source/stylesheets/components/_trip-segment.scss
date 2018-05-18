@@ -46,3 +46,37 @@
     margin-right: $small-spacing;
   }
 }
+
+.trip-segment__activity {
+  color: $teal-light;
+  margin-bottom: $base-spacing;
+
+   > svg {
+    font-size: $small-font-size;
+    margin: 0 $small-spacing 0 $base-spacing;
+  }
+}
+
+.trip-segment__event {
+  background-color: $yellow-light;
+  border-radius: $large-border-radius;
+  margin: $base-spacing 0;
+  padding: $small-spacing $base-spacing $base-spacing;
+
+   > svg,
+  span {
+    color: $yellow;
+    margin-right: $small-spacing;
+  }
+}
+
+.trip-segment__event-name {
+  margin-bottom: $small-spacing;
+  margin-left: $base-spacing * 1.7;
+  margin-top: $small-spacing;
+}
+
+.trip-segment__event-address {
+  color: $teal-light;
+  margin-left: $base-spacing * 1.7;
+}

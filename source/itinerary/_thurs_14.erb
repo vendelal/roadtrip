@@ -1,0 +1,20 @@
+<section class="trip-segment">
+  <div class="trip-segment__content">
+
+    <h1 class="trip-segment__date">Thursday, June 14</h1>
+
+    <p class="trip-segment__destination"><i class="fas fa-arrow-right"></i>Leave Zion National Park</p>
+
+    <time class="trip-segment__time">Depart 7:00 AM</time>
+    <%= partial "itinerary/shared/driving_time", locals: { driving_time: "4h48" } %>
+    <time class="trip-segment__time">Arrive 12:00 PM</time>
+
+    <p class="trip-segment__destination"><i class="fas fa-map-pin"></i>Lunch in Park City</p>
+
+    <time class="trip-segment__time">Depart 2:00 PM</time>
+    <%= partial "itinerary/shared/driving_time", locals: { driving_time: "4h30-5h30" } %>
+    <time class="trip-segment__time">Arrive 7:00 PM</time>
+
+    <p class="trip-segment__destination"><i class="fas fa-map-pin"></i>Arrive in Yellowstone</p>
+  </div>
+</section>

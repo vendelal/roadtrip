@@ -1,0 +1,24 @@
+<section class="trip-segment">
+  <div class="trip-segment__content">
+
+    <h1 class="trip-segment__date">Sunday, June 17</h1>
+
+    <div class="trip-segment__event">
+        <i class="fas fa-calendar"></i>
+        <span>10:30 AM - 3:30 PM</span>
+        <p class="trip-segment__event-name">Scenic Rafting</p>
+        <p class="trip-segment__event-address">
+            Moose, WY <br />
+            (Busses leaving from Teton Village)
+        </p>
+    </div>
+
+    <time class="trip-segment__time">Depart 4:00 PM</time>
+    <%= partial "itinerary/shared/driving_time", locals: { driving_time: "4h28" } %>
+    <time class="trip-segment__time">Arrive 9:00 AM</time>
+
+    <p class="trip-segment__destination"><i class="fas fa-camera-retro"></i>Arrive at Wasatch State Park</p>
+
+
+  </div>
+</section>
