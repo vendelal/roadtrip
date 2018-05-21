@@ -42,6 +42,7 @@
   background-color: $teal;
   color: $blue;
   padding: $base-spacing 0;
+  position: relative;
 }
 
 .trip-segment__overnight-location {
@@ -86,4 +87,16 @@
 .trip-segment__event-address {
   color: $teal-light;
   margin-left: $base-spacing * 1.7;
+}
+
+.trip-segment__images-link {
+  background: $teal-light;
+  border-radius: $large-border-radius;
+  bottom: $base-spacing;
+  color: $white;
+  padding: $small-spacing $base-spacing;
+  position: absolute;
+  right: $base-spacing;
+
+  pointer: cursor;
 }
