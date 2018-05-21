@@ -4,6 +4,13 @@
   padding-bottom: $large-spacing;
 }
 
+.trip-segment__image {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+
 .trip-segment__date {
   color: $orange;
   margin: $larger-spacing 0;
