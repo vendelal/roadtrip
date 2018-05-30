@@ -6,8 +6,12 @@ header {
   h1,
   h2 {
     color: $orange;
-    font-size: $base-font-size;
     letter-spacing: $wide-letter-spacing;
+  }
+
+  h2 {
+    font-size: $base-font-size;
+    margin-bottom: $smallest-spacing;
   }
 
   date {
