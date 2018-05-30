@@ -6,10 +6,13 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "Roadtrip" %></title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <%= stylesheet_link_tag "site" %>
+    <%= stylesheet_link_tag "flickity" %>
     <%= javascript_include_tag "site" %>
+    <%= javascript_include_tag "flickity" %>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
   </head>
   <body>

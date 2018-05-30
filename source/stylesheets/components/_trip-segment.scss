@@ -1,3 +1,7 @@
+.trip-segment {
+  box-shadow: 0 -5px 12px 0 rgba(0, 0, 0, 0.5);
+}
+
 .trip-segment__content {
   margin: 0 auto;
   max-width: 75%;
@@ -13,7 +17,7 @@
 
 .trip-segment__date {
   color: $orange;
-  margin: $larger-spacing 0;
+  padding: $larger-spacing 0;
   text-align: center;
 }
 
@@ -40,6 +44,7 @@
 
 .trip-segment--night {
   background-color: $teal;
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.5);
   color: $blue;
   padding: $base-spacing 0;
   position: relative;
