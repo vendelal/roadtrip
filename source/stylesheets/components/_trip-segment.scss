@@ -1,5 +1,5 @@
 .trip-segment {
-  box-shadow: 0 -5px 12px 0 rgba(0, 0, 0, 0.5);
+  // box-shadow: 0 -5px 12px 0 rgba(0, 0, 0, 0.5);
 }
 
 .trip-segment__content {
@@ -44,7 +44,7 @@
 
 .trip-segment--night {
   background-color: $teal;
-  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.5);
+  // box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.5);
   color: $blue;
   padding: $base-spacing 0;
   position: relative;
@@ -57,6 +57,16 @@
    > svg {
     font-size: $small-font-size;
     margin-right: $small-spacing;
+  }
+}
+
+.trip-segment__address {
+  a {
+    color: $blue;
+
+    &:visited {
+      color: $blue;
+    }
   }
 }
 
@@ -102,6 +112,9 @@
   padding: $small-spacing $base-spacing;
   position: absolute;
   right: $base-spacing;
-
   pointer: cursor;
+
+  > svg.fa-external-link-alt {
+    margin-right: -3px;
+  }
 }

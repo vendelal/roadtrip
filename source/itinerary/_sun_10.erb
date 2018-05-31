@@ -1,10 +1,3 @@
-<section class="trip-segment__image-container" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
-    <img src="../images/san-diego.JPG" />
-    <img src="../images/san-diego-sunset.JPG" />
-    <img src="../images/san-diego.JPG" />
-    <img src="../images/san-diego-sunset.JPG" />
-</section>
-
 <section class="trip-segment">
   <div class="trip-segment__content">
 
@@ -13,7 +6,7 @@
     <p class="trip-segment__destination"><i class="fas fa-arrow-right"></i>Leave San Diego</p>
 
     <time class="trip-segment__time">Depart 8:00 AM</time>
-    <%= partial "itinerary/shared/driving_time", locals: { driving_time: "5h" } %>
+    <%= partial "itinerary/shared/driving_time", locals: { driving_time: "5h", directions_link: "https://www.google.com/maps/dir/710+Turquoise+St,+San+Diego,+CA+92109/Las+Vegas+Strip,+NV/@34.4586703,-117.1492547,8z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x80dc0185cdcfee49:0xf5c21f894ad3efa5!2m2!1d-117.2607733!2d32.8086002!1m5!1m1!1s0x80c8c4383428d4eb:0x43e2195d0c26834c!2m2!1d-115.1728484!2d36.1147065!3e0" } %>
     <time class="trip-segment__time">Arrive 1:00 PM</time>
 
     <p class="trip-segment__destination"><i class="fas fa-map-pin"></i>Lunch in Las Vegas</p>
