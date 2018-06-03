@@ -5,11 +5,17 @@
 
     <h1 class="trip-segment__date">Tuesday, June 12</h1>
 
-     <p class="trip-segment__destination"><i class="fas fa-arrow-right"></i>Leave Horseshoe Bend</p>
+    <p class="trip-segment__destination"><i class="fas fa-arrow-right"></i>Leave Horseshoe Bend</p>
 
-    <time class="trip-segment__time">Depart 9:00 AM</time>
+    <time class="trip-segment__time">Depart 6:00 AM</time>
+    <%= partial "itinerary/shared/driving_time", locals: { driving_time: "2h41", directions_link: "https://www.google.com/maps/dir/36.9360833,-111.5034444/Lower+Antelope+Canyon,+LeChee,+AZ/@36.9170977,-111.471694,14z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x87341390d062470d:0x1a93ee60f141ec14!2m2!1d-111.4132505!2d36.9031279!3e0" } %>
+    <time class="trip-segment__time">Arrive 6:20 AM</time>
+
+    <p class="trip-segment__destination"><i class="fas fa-map-pin"></i>Guided Tour @ Lower Antelope</p>
+
+    <time class="trip-segment__time">Depart 8:30 AM</time>
     <%= partial "itinerary/shared/driving_time", locals: { driving_time: "2h41", directions_link: "https://www.google.com/maps/dir/Horseshoe+Bend+Observation+Area,+Page,+Arizona/Under+Canvas+Zion,+Virgin,+UT/@37.0638304,-112.9395571,9z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x87346c8d22566b09:0x45637089634f1702!2m2!1d-111.5103631!2d36.8790614!1m5!1m1!1s0x80caec667a300f91:0x8982090d3fd54a04!2m2!1d-113.1147972!2d37.2682087!3e0" } %>
-    <time class="trip-segment__time">Arrive 12:00 PM</time>
+    <time class="trip-segment__time">Arrive 11:30 AM</time>
 
     <p class="trip-segment__destination"><i class="fas fa-map-pin"></i>Arrive in Zion National Park</p>
 
