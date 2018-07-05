@@ -43,11 +43,24 @@
 }
 
 .trip-segment--night {
-  background-color: $teal;
-  // box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.5);
+  background: $teal no-repeat right bottom;
+  background-size: contain;
   color: $blue;
   padding: $base-spacing 0;
   position: relative;
+}
+
+.trip-segment--background-opt-1 {
+  background-image: url('../images/background-1.svg');
+}
+
+.trip-segment--background-opt-2 {
+  background-image: url('../images/background-2.svg');
+  background-size: cover;
+}
+
+.trip-segment--background-opt-3 {
+  background-image: url('../images/background-3.svg');
 }
 
 .trip-segment__overnight-location {
