@@ -1,0 +1,44 @@
+<section class="trip-segment__image" id="yellowstone2"></section>
+
+<section class="trip-segment">
+
+  <h1 class="trip-segment__date">
+    Saturday, June 16
+  </h1>
+
+  <%= partial(
+    "itinerary/shared/stop",
+    locals: {
+      text: "Explore Yellowstone",
+      event: "explore"
+    }
+  ) %>
+
+  <%= partial(
+    "itinerary/shared/travel_time",
+    locals: {
+      travel_time: "???"
+    }
+  ) %>
+
+  <div class="trip-segment__event">
+
+    <i class="fas fa-calendar"></i>
+
+    <span>
+      3:30 PM
+    </span>
+
+    <p class="trip-segment__event-name">
+      Wedding &amp; Reception
+    </p>
+
+    <p class="trip-segment__event-address">
+        Snake River Ranch<br />
+        Snake River Ranch Road<br />
+        Wilson, WY 83014
+    </p>
+
+  </div>
+
+</section>

@@ -1,0 +1,14 @@
+<% if event === "arriving" %>
+  <% icon = "map-pin" %>
+<% elsif event === "explore" %>
+  <% icon = "camera-retro" %>
+<% elsif event === "home" %>
+  <% icon = "camera-retro" %>
+<% else %>
+  <%- icon = "arrow-right" %>
+<% end %>
+
+<p class="stop">
+  <i class="fas fa-<%= icon %>"></i>
+  <%= text %>
+</p>

@@ -1,11 +1,6 @@
 .trip-segment {
-  // box-shadow: 0 -5px 12px 0 rgba(0, 0, 0, 0.5);
-}
-
-.trip-segment__content {
   margin: 0 auto;
-  max-width: 75%;
-  padding-bottom: $large-spacing;
+  padding: 0 $large-spacing $large-spacing;
 }
 
 .trip-segment__image {
@@ -16,25 +11,13 @@
 }
 
 .trip-segment__date {
-  color: $orange;
+  color: var(--header-text);
   padding: $larger-spacing 0;
   text-align: center;
 }
 
-.trip-segment__destination {
-  background-color: $yellow-light;
-  border-radius: $large-border-radius;
-  margin: $base-spacing 0;
-  padding: $small-spacing $base-spacing;
-
-   > svg {
-    color: $yellow;
-    margin-right: $base-spacing;
-  }
-}
-
 .trip-segment__time {
-  color: $yellow;
+  color: var(--tertiary-text);
   font-size: $smallest-font-size;
   font-weight: bold;
   letter-spacing: $wide-letter-spacing;
@@ -43,10 +26,10 @@
 }
 
 .trip-segment--night {
-  background: $teal no-repeat right bottom;
+  background: var(--overnight-background) no-repeat right bottom;
   background-size: contain;
   color: $blue;
-  padding: $base-spacing 0;
+  padding: $base-spacing $larger-spacing;
   position: relative;
 }
 
@@ -64,7 +47,7 @@
 }
 
 .trip-segment__overnight-location {
-  color: $white;
+  color: var(--viewport-background);
   font-size: $base-font-size;
 
    > svg {
@@ -75,16 +58,16 @@
 
 .trip-segment__address {
   a {
-    color: $blue;
+    color: var(--secondary-text);
 
     &:visited {
-      color: $blue;
+      color: var(--secondary-text);
     }
   }
 }
 
 .trip-segment__activity {
-  color: $teal-light;
+  color: var(--activity-text);
   margin-bottom: $base-spacing;
 
    > svg {
@@ -94,14 +77,14 @@
 }
 
 .trip-segment__event {
-  background-color: $yellow-light;
+  background-color: var(--stop-background);
   border-radius: $large-border-radius;
   margin: $base-spacing 0;
   padding: $small-spacing $base-spacing $base-spacing;
 
    > svg,
   span {
-    color: $yellow;
+    color: var(--stop-icon);
     margin-right: $small-spacing;
   }
 }
@@ -113,15 +96,15 @@
 }
 
 .trip-segment__event-address {
-  color: $teal-light;
+  color: var(--secondary-text);
   margin-left: $base-spacing * 1.7;
 }
 
 .trip-segment__images-link {
-  background: $teal-light;
+  background: var(--secondary-text);
   border-radius: $large-border-radius;
   bottom: $base-spacing;
-  color: $white;
+  color: var(--viewport-background);
   padding: $small-spacing $base-spacing;
   position: absolute;
   right: $base-spacing;

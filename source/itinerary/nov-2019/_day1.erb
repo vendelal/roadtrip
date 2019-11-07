@@ -1,0 +1,41 @@
+<section class="trip-segment">
+
+  <h1 class="trip-segment__date">
+    Friday, Nov 8
+  </h1>
+
+  <%= partial(
+    "itinerary/shared/stop",
+    locals: {
+      text: "Leave New York City",
+      event: "leaving"
+    }
+  ) %>
+
+  <time class="trip-segment__time">
+    Depart 8:00 PM EST
+  </time>
+
+  <%= partial(
+    "itinerary/shared/travel_time",
+    locals: {
+      travel_time: "6h",
+      text: "Track flight",
+      vehicle: "plane",
+      directions_link: "https://flightaware.com/live/flight/UAL2304"
+    }
+  ) %>
+
+  <time class="trip-segment__time">
+    Arrive 10:58 PM PST
+  </time>
+
+  <%= partial(
+    "itinerary/shared/stop",
+    locals: {
+      text: "Arrive in San Diego",
+      event: "arriving"
+    }
+  ) %>
+
+</section>

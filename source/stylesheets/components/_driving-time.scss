@@ -1,27 +1,28 @@
-.driving-time {
+.travel-time {
   align-items: center;
-  color: $blue;
+  color: var(--travel-time);
   display: flex;
   justify-content: space-between;
   margin: $base-spacing;
 }
 
-.driving-time__car-visual {
+.travel-time__car-visual {
   display: flex;
   flex-direction: column;
 
    > svg {
     margin: $smallest-spacing 0;
+    width: $base-font-size;
   }
 }
 
-.driving-time__time {
+.travel-time__time {
   flex-grow: 1;
   margin-left: $small-spacing;
 }
 
-.driving-time__directions-link {
-  color: $blue;
+.travel-time__directions-link {
+  color: var(--travel-time);
 
    > svg {
     font-size: $small-font-size;

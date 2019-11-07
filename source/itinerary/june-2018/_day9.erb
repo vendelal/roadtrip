@@ -1,0 +1,41 @@
+<section class="trip-segment">
+
+  <h1 class="trip-segment__date">
+    Monday, June 18
+  </h1>
+
+  <%= partial(
+    "itinerary/shared/stop",
+    locals: {
+      text: "Leave at Wasatch State Park",
+      event: "leaving"
+    }
+  ) %>
+
+  <time class="trip-segment__time">
+    Depart 9:00 AM
+  </time>
+
+  <%= partial(
+    "itinerary/shared/travel_time",
+    locals: {
+      travel_time: "10h50",
+      directions_link: "https://www.google.com/maps/dir/Wasatch+Mountain+State+Park,+1281+Warm+Springs+Rd,+Midway,+UT+84049/710+Turquoise+Street,+San+Diego,+CA/@36.5670826,-116.7197466,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8752751183c25637:0xc81ed3dbae7ea3a8!2m2!1d-111.4900277!2d40.5331139!1m5!1m1!1s0x80dc0185cdcfee49:0xf5c21f894ad3efa5!2m2!1d-117.2607733!2d32.8086002!3e0"
+    }
+  ) %>
+
+  <time class="trip-segment__time">
+    Arrive 8:00 PM
+  </time>
+
+  <%= partial(
+    "itinerary/shared/stop",
+    locals: {
+      text: "Arrive in San Diego",
+      event: "home"
+    }
+  ) %>
+
+</section>
+
+<section class="trip-segment__image" id="san-diego2"></section>

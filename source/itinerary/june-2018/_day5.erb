@@ -1,0 +1,65 @@
+<section class="trip-segment__image" id="driving-utah"></section>
+
+<section class="trip-segment">
+
+  <h1 class="trip-segment__date">
+    Thursday, June 14
+  </h1>
+
+  <%= partial(
+    "itinerary/shared/stop",
+    locals: {
+      text: "Leave Zion National Park",
+      event: "leaving"
+    }
+  ) %>
+
+  <time class="trip-segment__time">
+    Depart 7:00 AM
+  </time>
+
+  <%= partial(
+    "itinerary/shared/travel_time",
+    locals: {
+      travel_time: "4h48",
+      directions_link: "https://www.google.com/maps/dir/Under+Canvas+Zion,+Virgin,+UT/Park+City,+Utah/@38.9840233,-113.4781985,8z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x80caec667a300f91:0x8982090d3fd54a04!2m2!1d-113.1147972!2d37.2682087!1m5!1m1!1s0x87520f632c6303fd:0xd871c4df25375794!2m2!1d-111.4979729!2d40.6460622!3e0"
+    }
+  ) %>
+
+  <time class="trip-segment__time">
+    Arrive 12:00 PM
+  </time>
+
+  <%= partial(
+    "itinerary/shared/stop",
+    locals: {
+      text: "Lunch in Park City",
+      event: "arriving"
+    }
+  ) %>
+
+  <time class="trip-segment__time">
+    Depart 2:00 PM
+  </time>
+
+  <%= partial(
+    "itinerary/shared/travel_time",
+    locals: {
+      travel_time: "4h30-5h30",
+      directions_link: "https://www.google.com/maps/dir/Park+City,+UT,+USA/43.7036111,-110.62275/@42.1714089,-112.263577,8z/data=!4m9!4m8!1m5!1m1!1s0x87520f632c6303fd:0xd871c4df25375794!2m2!1d-111.4979729!2d40.6460622!1m0!3e0"
+    }
+  ) %>
+
+  <time class="trip-segment__time">
+    Arrive 7:00 PM
+  </time>
+
+  <%= partial(
+    "itinerary/shared/stop",
+    locals: {
+      text: "Arrive in Yellowstone",
+      event: "arriving"
+    }
+  ) %>
+
+</section>

@@ -1,0 +1,38 @@
+roadtrip_title: San Diego to Jupiter
+travel_dates: NOV 8-18, 2019
+theme: texas
+
+days:
+
+  -
+    date: 2019-11-08
+    items:
+      - type: stop
+        icon: arrow-right
+        title: Vendela leaves NYC
+
+      - type: travel
+        icon: plane
+        departure: 8:00 PM EST
+        arrival: 10:58 PM PST
+        travel_time: 6h
+        link: https://flightaware.com/live/flight/UAL2304
+        link_text: Track flight
+
+      - type: stop
+        icon: map-pin
+        title: Vendela arrives in San Diego
+
+    # overnight:
+    #   - title: "Hang out in San Diego for the weekend"
+
+  # - title: "Tuesday, Nov 12"
+
+  # - title: "Wednesday, Nov 13"
+
+  # - title: "Thursday, Nov 14"
+
+  # - title: "Friday, Nov 15"
+
+  # - title: "Monday, Nov 18"
+

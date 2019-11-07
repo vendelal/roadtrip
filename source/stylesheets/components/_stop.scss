@@ -1,0 +1,11 @@
+.stop {
+  background: var(--stop-background);
+  border-radius: $large-border-radius;
+  margin: $base-spacing 0;
+  padding: $small-spacing $base-spacing;
+
+   > svg {
+    color: var(--stop-icon);
+    margin-right: $base-spacing;
+  }
+}

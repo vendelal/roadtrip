@@ -1,6 +1,6 @@
 footer {
-  background-color: $yellow;
-  color: $yellow-light;
+  background-color: var(--header-background);
+  color: var(--viewport-background);
   font-size: $largest-font-size;
   padding: $large-spacing;
   text-align: center;

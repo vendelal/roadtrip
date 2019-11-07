@@ -1,0 +1,42 @@
+<section class="trip-segment">
+
+  <h1 class="trip-segment__date">
+    Friday, June 15
+  </h1>
+
+  <%= partial(
+    "itinerary/shared/stop",
+    locals: {
+      text: "Explore Yellowstone",
+      event: "explore"
+    }
+  ) %>
+
+  <%= partial(
+    "itinerary/shared/travel_time",
+    locals: {
+      travel_time: "???"
+    }
+  ) %>
+
+  <div class="trip-segment__event">
+
+    <i class="fas fa-calendar"></i>
+
+    <span>
+      6:00 PM
+    </span>
+
+    <p class="trip-segment__event-name">
+      Welcome Dinner
+    </p>
+
+    <p class="trip-segment__event-address">
+        National Museum of Wildlife Art<br />
+        2820 Rungius Rd <br />
+        Jackson, WY 83001
+    </p>
+
+  </div>
+
+</section>

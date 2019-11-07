@@ -1,11 +1,11 @@
 header {
-  background-color: $yellow;
+  background-color: var(--header-background);
   padding: $base-spacing;
   text-align: center;
 
   h1,
   h2 {
-    color: $orange;
+    color: var(--primary-text);
     letter-spacing: $wide-letter-spacing;
   }
 
@@ -15,7 +15,7 @@ header {
   }
 
   date {
-    color: $white;
+    color: var(--viewport-background);
     font-size: $small-font-size;
   }
 }

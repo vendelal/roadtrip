@@ -1,0 +1,23 @@
+.roadtrips {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 $large-spacing $large-spacing;
+}
+
+.roadtrips__link {
+  background: var(--stop-background);
+  border-radius: $pill-border-radius;
+  display: flex;
+  margin: $smallest-spacing 0;
+  padding: $base-spacing $large-spacing;
+
+  > svg {
+    color: var(--stop-icon);
+    margin-right: $small-spacing;
+  }
+}
+
+.roadtrips__name {
+  color: var(--primary-text);
+}

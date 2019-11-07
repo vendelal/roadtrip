@@ -1,0 +1,35 @@
+---
+title: Roadtrip - Nov 2019
+theme: texas
+---
+
+<% content_for :theme, data.nov2019.theme %>
+
+<header>
+  <h2>MATT &amp; VENDELA'S</h2>
+  <h1>ROADTRIP</h1>
+  <h2><%= data.nov2019.roadtrip_title %></h2>
+  <date><%= data.nov2019.travel_dates %></date>
+</header>
+
+<% data.nov2019.days.each do |day| %>
+
+<section class="trip-segment">
+    <h2 class="trip-segment__date">
+      <%= day.date.strftime("%A, %b %d")  %>
+    </h2>
+
+    <% day.items.each do |item| %>
+      <%= partial(
+        "partials/#{item.type}",
+        locals: { item: item },
+      ) %>
+    <% end %>
+  <% end %>
+</section>
+
+<footer>
+  <i class="fas fa-home"></i>
+</footer>
+
+

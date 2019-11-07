@@ -6,6 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :livereload
+activate :inline_svg
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -38,6 +39,15 @@ page '/*.txt', layout: false
 #     'Helping'
 #   end
 # end
+
+helpers do
+  def theme
+    if content_for? :theme
+      yield_content :theme
+    end
+  end
+end
+
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
