@@ -1,0 +1,10 @@
+.activity {
+  color: var(--activity-text);
+  margin-bottom: $base-spacing;
+  margin-left: $large-spacing;
+
+   > svg {
+    font-size: $small-font-size;
+    margin: 0 $small-spacing 0 $base-spacing;
+  }
+}

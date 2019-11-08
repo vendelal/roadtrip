@@ -1,0 +1,17 @@
+.link {
+  color: var(--travel-time);
+  display: block;
+  margin-left: $larger-spacing;
+  margin-bottom: $base-spacing;
+
+  &:visited,
+  &:active,
+  &:focus {
+    color: var(--travel-time);
+  }
+
+  > svg {
+    font-size: $small-font-size;
+    margin-left: $small-spacing;
+  }
+}

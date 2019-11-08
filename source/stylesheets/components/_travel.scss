@@ -1,0 +1,48 @@
+.travel {
+  margin: 0 $large-spacing;
+}
+
+.travel__duration-details {
+  align-items: center;
+  color: var(--travel-time);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 $base-spacing;
+}
+
+.travel__time {
+  color: var(--tertiary-text);
+  font-size: $smallest-font-size;
+  font-weight: bold;
+  letter-spacing: $wide-letter-spacing;
+  margin-left: $base-spacing;
+  text-transform: uppercase;
+}
+
+.travel__car-visual {
+  display: flex;
+  flex-direction: column;
+
+   > svg {
+    margin: $smallest-spacing 0;
+    width: $base-font-size;
+  }
+}
+
+.travel__duration {
+  flex-grow: 1;
+  margin-left: $small-spacing;
+}
+
+.travel__directions-link {
+  color: var(--travel-time);
+
+  > svg {
+    font-size: $small-font-size;
+    margin-left: $small-spacing;
+  }
+
+  &:visited {
+    color: var(--travel-time);
+  }
+}

@@ -1,7 +1,7 @@
 .stop {
   background: var(--stop-background);
   border-radius: $large-border-radius;
-  margin: $base-spacing 0;
+  margin: $base-spacing $large-spacing;;
   padding: $small-spacing $base-spacing;
 
    > svg {

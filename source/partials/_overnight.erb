@@ -1,0 +1,21 @@
+<section class="overnight">
+
+  <h2 class="overnight__location">
+
+    <% if item.icon.present? %>
+      <i class="fas fa-<%= item.icon %>"></i>
+    <% end %>
+
+    <%= item.title %>
+
+  </h2>
+
+  <p class="overnight__address">
+    <%= item.address %>
+  </p>
+
+  <a class="overnight__link" href="https://www.grandcanyonbedandbreakfast.com/">
+    <i class="fas fa-external-link-alt"></i>
+  </a>
+
+</section>

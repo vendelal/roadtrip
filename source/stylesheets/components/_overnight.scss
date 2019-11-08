@@ -1,0 +1,59 @@
+.overnight {
+  background: var(--overnight-background) no-repeat right bottom;
+  background-size: contain;
+  color: $blue;
+  margin-top: $larger-spacing;
+  padding: $base-spacing $larger-spacing;
+  position: relative;
+}
+
+
+.overnight--background-opt-1 {
+  background-image: url('../images/background-1.svg');
+}
+
+.overnight--background-opt-2 {
+  background-image: url('../images/background-2.svg');
+  background-size: cover;
+}
+
+.overnight--background-opt-3 {
+  background-image: url('../images/background-3.svg');
+}
+
+.overnight__location {
+  color: var(--viewport-background);
+  font-size: $base-font-size;
+
+   > svg {
+    font-size: $small-font-size;
+    margin-right: $small-spacing;
+  }
+}
+
+.overnight__address {
+  color: var(--secondary-text);
+
+  a {
+    color: var(--secondary-text);
+
+    &:visited {
+      color: var(--secondary-text);
+    }
+  }
+}
+
+.overnight__link {
+  background: var(--viewport-background);
+  border-radius: $large-border-radius;
+  bottom: $base-spacing;
+  color: var(--travel-time);
+  padding: $small-spacing $base-spacing;
+  position: absolute;
+  right: $base-spacing;
+  pointer: cursor;
+
+  > svg.fa-external-link-alt {
+    margin-right: -3px;
+  }
+}

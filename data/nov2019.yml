@@ -4,8 +4,7 @@ theme: texas
 
 days:
 
-  -
-    date: 2019-11-08
+  - date: 2019-11-08
     items:
       - type: stop
         icon: arrow-right
@@ -23,16 +22,156 @@ days:
         icon: map-pin
         title: Vendela arrives in San Diego
 
-    # overnight:
-    #   - title: "Hang out in San Diego for the weekend"
+      - type: overnight
+        title: Hang out in San Diego for the weekend
 
-  # - title: "Tuesday, Nov 12"
+  - date: 2019-11-12
+    items:
+      - type: stop
+        icon: arrow-right
+        title: Leave San Diego
 
-  # - title: "Wednesday, Nov 13"
+      - type: travel
+        icon: car
+        departure: 9:00 AM PST
+        arrival: 4:00 PM MST
+        travel_time: 6h
+        link: https://flightaware.com/live/flight/UAL2304
+        link_text: Directions
 
-  # - title: "Thursday, Nov 14"
+      - type: stop
+        icon: map-pin
+        title: Eat in Tucson, AZ
 
-  # - title: "Friday, Nov 15"
+      - type: travel
+        icon: car
+        departure: 5:00 PM MST
+        arrival: 9:00 PM MST
+        travel_time: 6h
+        link: https://www.google.com/maps/dir/710+Turquoise+Street,+San+Diego,+CA/Tucson,+AZ/@32.7948001,-115.2387915,8z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x80dc0185cdcfee49:0xf5c21f894ad3efa5!2m2!1d-117.2607733!2d32.8086002!1m5!1m1!1s0x86d665410b2ced2b:0x73c32d384d16c715!2m2!1d-110.9747108!2d32.2226066!3e0
+        link_text: Directions
 
-  # - title: "Monday, Nov 18"
+      - type: stop
+        icon: map-pin
+        title: Arrive in Las Cruces, NM
+
+      - type: overnight
+        icon: moon
+        title: "Overnight: Hotel in Las Cruces"
+        address: >
+          Springhill Suites by Marriott 
+          1611 Hickory Loop 
+          Las Cruces, NM 88005
+          (575) 541-8887
+        link: https://www.marriott.com/hotels/travel/lruss-springhill-suites-las-cruces/
+
+  - date: 2019-11-13
+    items:
+      - type: stop
+        icon: arrow-right
+        title: Leave Las Cruces
+
+      - type: travel
+        icon: plane
+        departure: 8:00 AM MST
+        arrival: 12:45 PM CST
+        travel_time: 3h45
+        link: https://www.google.com/maps/dir/SpringHill+Suites+by+Marriott+Las+Cruces,+Hickory+Loop,+Las+Cruces,+NM/The+Hotel+Paisano,+Highland+Street,+Marfa,+TX/@31.2989108,-105.9663656,9z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x86de16230583a2f9:0x8284eed96088e054!2m2!1d-106.791279!2d32.291487!1m5!1m1!1s0x86efb0a42ae0dfd7:0x82fb5de8e69613c8!2m2!1d-104.0219021!2d30.3122737!3e0
+        link_text: Directions
+
+      - type: stop
+        icon: map-pin
+        title: Arrive in Marfa, TX
+
+      - type: link
+        link: ""
+        link_text: Places to eat
+
+      - type: activity
+        title: The Block
+
+      - type: activity
+        title: Dinner at Capri
+
+      - type: overnight
+        title: "Overnight: Hotel in Marfa"
+        address: |
+          Hotel Paisano 
+          207 N. Highland
+          Marfa, Texas  79843
+          (432) 729-3669
+
+  - date: 2019-11-14
+    items:
+      - type: activity
+        title: Breakfast at
+
+      - type: stop
+        icon: arrow-right
+        title: Leave Marfa
+
+      - type: travel
+        icon: car
+        departure: 10:30 AM CST
+        arrival: 7:30 PM CST
+        travel_time: 9h
+        link: https://www.google.com/maps/dir/The+Hotel+Paisano,+Highland+Street,+Marfa,+TX/Houston,+TX/@30.0394852,-101.9369734,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x86efb0a42ae0dfd7:0x82fb5de8e69613c8!2m2!1d-104.0219021!2d30.3122737!1m5!1m1!1s0x8640b8b4488d8501:0xca0d02def365053b!2m2!1d-95.3698028!2d29.7604267!3e0
+        link_text: Directions
+
+      - type: stop
+        icon: map-pin
+        title: Arrive in Houston, TX
+
+      - type: link
+        link: ""
+        link_text: Places to eat dinner
+
+      - type: overnight
+        icon: moon
+        title: "Overnight: Hotel in Houston"
+
+  - date: 2019-11-15
+    items:
+      - type: stop
+        icon: arrow-right
+        title: Leave Houston
+
+      - type: travel
+        icon: car
+        departure: 10:30 AM CST
+        arrival: 4:00 PM CST
+        travel_time: 5h30
+        link: https://www.google.com/maps/dir/Houston,+TX/New+Orleans,+LA/@30.1045658,-93.8427797,8z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8640b8b4488d8501:0xca0d02def365053b!2m2!1d-95.3698028!2d29.7604267!1m5!1m1!1s0x8620a454b2118265:0xdb065be85e22d3b4!2m2!1d-90.0715323!2d29.9510658!3e0
+        link_text: Directions
+
+      - type: stop
+        icon: map-pin
+        title: Arrive in New Orleans
+
+      - type: overnight
+        title: Hang out in New Orleans for the weekend
+
+  - date: 2019-11-18
+    items:
+      - type: stop
+        icon: arrow-right
+        title: Leave New Orleans
+
+      - type: travel
+        icon: car
+        departure: 9:00 AM CST
+        arrival: 9:30 PM EST
+        travel_time: 11h30
+        link: https://www.google.com/maps/dir/Houston,+TX/New+Orleans,+LA/@30.1045658,-93.8427797,8z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8640b8b4488d8501:0xca0d02def365053b!2m2!1d-95.3698028!2d29.7604267!1m5!1m1!1s0x8620a454b2118265:0xdb065be85e22d3b4!2m2!1d-90.0715323!2d29.9510658!3e0
+        link_text: Directions
+
+      - type: stop
+        icon: map-pin
+        title: Arrive in Jupiter, FL
+
+  # - date: "Thursday, Nov 14"
+
+  # - date: "Friday, Nov 15"
+
+  # - date: "Monday, Nov 18"
 

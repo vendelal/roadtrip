@@ -5,12 +5,17 @@
   padding: 0 $large-spacing $large-spacing;
 }
 
+.roadtrips__title {
+  margin: $larger-spacing $larger-spacing $base-spacing;
+}
+
 .roadtrips__link {
   background: var(--stop-background);
   border-radius: $pill-border-radius;
   display: flex;
   margin: $smallest-spacing 0;
   padding: $base-spacing $large-spacing;
+  position: relative;
 
   > svg {
     color: var(--stop-icon);
@@ -20,4 +25,15 @@
 
 .roadtrips__name {
   color: var(--primary-text);
+}
+
+.roadtrips__dates {
+  color: var(--travel-time);
+  font-size: $small-font-size;
+}
+
+.roadtrips__link-arrow {
+  position: absolute;
+  right: $base-spacing;
+  top: 1.55rem;
 }

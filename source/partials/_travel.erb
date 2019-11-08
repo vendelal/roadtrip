@@ -1,39 +1,54 @@
 <% vehicle = item.vehicle || "car" %>
 
-<div class="travel-time">
+<div class="travel">
 
-  <div class="travel-time__car-visual">
+  <time class="travel__time">
+    <%= item.departure %>
+  </time>
 
-    <%= inline_svg(
-      "dotted-line.svg",
-      role: "img",
-      aria_hidden: "true",
-      alt: "dotted line",
-    ) %>
+    <div class="travel__duration-details">
 
-    <i class="fas fa-<%= vehicle %>"></i>
+      <div class="travel__car-visual">
 
-    <%= inline_svg(
-      "dotted-line.svg",
-      role: "img",
-      aria_hidden: "true",
-      alt: "dotted line",
-    ) %>
-  </div>
+        <%= inline_svg(
+          "dotted-line.svg",
+          role: "img",
+          aria_hidden: "true",
+          alt: "dotted line",
+        ) %>
 
-  <p class="travel-time__time"><%= item.travel_time %></p>
+        <i class="fas fa-<%= vehicle %>"></i>
 
-  <% if item.link.present? && item.link_text.present? %>
+        <%= inline_svg(
+          "dotted-line.svg",
+          role: "img",
+          aria_hidden: "true",
+          alt: "dotted line",
+        ) %>
+      </div>
 
-    <% link_to(
-      item.link,
-      target: "_blank",
-      class: "travel-time__directions-link",
-    ) do %>
+      <p class="travel__duration">
+        <%= item.travel_time %>
+      </p>
 
-      <%= item.link_text %> <i class="fas fa-chevron-right"></i>
+      <% if item.link.present? && item.link_text.present? %>
 
-    <% end %>
+        <% link_to(
+          item.link,
+          target: "_blank",
+          class: "travel__directions-link",
+        ) do %>
 
-  <% end %>
+          <%= item.link_text %> <i class="fas fa-chevron-right"></i>
+
+        <% end %>
+
+      <% end %>
+
+    </div>
+
+  <time class="travel__time">
+    <%= item.departure %>
+  </time>
+
 </div>
