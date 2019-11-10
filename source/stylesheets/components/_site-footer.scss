@@ -2,6 +2,7 @@ footer {
   background-color: var(--header-background);
   color: var(--viewport-background);
   font-size: $largest-font-size;
+  margin-top: $large-spacing;
   padding: $large-spacing;
   text-align: center;
 }

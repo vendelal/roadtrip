@@ -24,6 +24,7 @@ days:
 
       - type: overnight
         title: Hang out in San Diego for the weekend
+        class_name: surfers
 
   - date: 2019-11-12
     items:
@@ -47,8 +48,8 @@ days:
         icon: car
         departure: 5:00 PM MST
         arrival: 9:00 PM MST
-        travel_time: 6h
-        link: https://www.google.com/maps/dir/710+Turquoise+Street,+San+Diego,+CA/Tucson,+AZ/@32.7948001,-115.2387915,8z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x80dc0185cdcfee49:0xf5c21f894ad3efa5!2m2!1d-117.2607733!2d32.8086002!1m5!1m1!1s0x86d665410b2ced2b:0x73c32d384d16c715!2m2!1d-110.9747108!2d32.2226066!3e0
+        travel_time: 4h
+        link: https://www.google.com/maps/dir/Tucson,+AZ/SpringHill+Suites+by+Marriott+Las+Cruces,+Hickory+Loop,+Las+Cruces,+NM/@31.8649377,-110.0054359,8z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x86d665410b2ced2b:0x73c32d384d16c715!2m2!1d-110.9747108!2d32.2226066!1m5!1m1!1s0x86de16230583a2f9:0x8284eed96088e054!2m2!1d-106.791279!2d32.291487!3e0
         link_text: Directions
 
       - type: stop
@@ -64,6 +65,10 @@ days:
           Las Cruces, NM 88005
           (575) 541-8887
         link: https://www.marriott.com/hotels/travel/lruss-springhill-suites-las-cruces/
+        class_name: las-cruces
+
+      - type: image
+        src: /images/las-cruces.jpg
 
   - date: 2019-11-13
     items:
@@ -72,23 +77,41 @@ days:
         title: Leave Las Cruces
 
       - type: travel
-        icon: plane
-        departure: 8:00 AM MST
-        arrival: 12:45 PM CST
-        travel_time: 3h45
-        link: https://www.google.com/maps/dir/SpringHill+Suites+by+Marriott+Las+Cruces,+Hickory+Loop,+Las+Cruces,+NM/The+Hotel+Paisano,+Highland+Street,+Marfa,+TX/@31.2989108,-105.9663656,9z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x86de16230583a2f9:0x8284eed96088e054!2m2!1d-106.791279!2d32.291487!1m5!1m1!1s0x86efb0a42ae0dfd7:0x82fb5de8e69613c8!2m2!1d-104.0219021!2d30.3122737!3e0
+        icon: car
+        departure: 6:30 AM MST
+        arrival: 7:30 AM MST
+        travel_time: 54m
+        link: https://www.google.com/maps/dir/SpringHill+Suites+by+Marriott+Las+Cruces,+Hickory+Loop,+Las+Cruces,+NM/White+Sands+Visitor's+Center,+U.S.+70,+Alamogordo,+NM/@32.7839441,-106.334994,24942m/data=!3m1!1e3!4m14!4m13!1m5!1m1!1s0x86de16230583a2f9:0x8284eed96088e054!2m2!1d-106.791279!2d32.291487!1m5!1m1!1s0x86e0608829cf2fd5:0x525be83778e8e222!2m2!1d-106.1722457!2d32.7796763!3e0
+        link_text: Directions
+
+      - type: stop
+        icon: camera-retro
+        title: Explore White Sands
+
+      - type: activity
+        title: Driving Dunes Drive
+
+      - type: link
+        link: https://www.nps.gov/whsa/planyourvisit/driving-dunes-drive.htm
+        link_text: Details
+
+      - type: travel
+        icon: car
+        departure: 9:00 AM MST
+        arrival: 2:10 PM CST
+        travel_time: 4h10
+        link: https://www.google.com/maps/dir/White+Sands+Visitor's+Center,+U.S.+70,+Alamogordo,+NM/Marfa,+TX/@31.6371492,-106.517065,573602m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x86e0608829cf2fd5:0x525be83778e8e222!2m2!1d-106.1722457!2d32.7796763!1m5!1m1!1s0x86efb0a37f4025ff:0x720e0d3e89d4c90!2m2!1d-104.020623!2d30.3094622!3e0
         link_text: Directions
 
       - type: stop
         icon: map-pin
         title: Arrive in Marfa, TX
 
-      - type: link
-        link: ""
-        link_text: Places to eat
+      - type: activity
+        title: Dan Flavin Marfa Project (1-3pm)
 
       - type: activity
-        title: The Block
+        title: Donald Judd Concrete Works (9-4:30pm)
 
       - type: activity
         title: Dinner at Capri
@@ -101,10 +124,14 @@ days:
           Marfa, Texas  79843
           (432) 729-3669
 
+      - type: image
+        src: /images/marfa1.jpeg
+
+
   - date: 2019-11-14
     items:
       - type: activity
-        title: Breakfast at
+        title: Breakfast at Aster
 
       - type: stop
         icon: arrow-right
@@ -113,18 +140,32 @@ days:
       - type: travel
         icon: car
         departure: 10:30 AM CST
-        arrival: 7:30 PM CST
-        travel_time: 9h
+        arrival: 4:00 PM CST
+        travel_time: 5h30
         link: https://www.google.com/maps/dir/The+Hotel+Paisano,+Highland+Street,+Marfa,+TX/Houston,+TX/@30.0394852,-101.9369734,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x86efb0a42ae0dfd7:0x82fb5de8e69613c8!2m2!1d-104.0219021!2d30.3122737!1m5!1m1!1s0x8640b8b4488d8501:0xca0d02def365053b!2m2!1d-95.3698028!2d29.7604267!3e0
         link_text: Directions
 
       - type: stop
         icon: map-pin
-        title: Arrive in Houston, TX
+        title: Late lunch in San Antonio, TX
 
-      - type: link
-        link: ""
-        link_text: Places to eat dinner
+      - type: activity
+        title: Eat at Smoke Shack BBQ
+
+      - type: activity
+        title: The Alamo
+
+      - type: travel
+        icon: car
+        departure: 5:00 PM CST
+        arrival: 8:00 PM CST
+        travel_time: 3h
+        link: https://www.google.com/maps/dir/The+Alamo,+Alamo+Plaza,+San+Antonio,+TX/Houston,+TX/@29.7689974,-97.4854932,9z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x865c5f554d36895f:0x17f98f0f84e7c422!2m2!1d-98.4861419!2d29.4259671!1m5!1m1!1s0x8640b8b4488d8501:0xca0d02def365053b!2m2!1d-95.3698028!2d29.7604267!3e0
+        link_text: Directions
+
+      - type: stop
+        icon: map-pin
+        title: Arrive in Houston, TX
 
       - type: overnight
         icon: moon

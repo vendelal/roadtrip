@@ -5,6 +5,22 @@
   margin-top: $larger-spacing;
   padding: $base-spacing $larger-spacing;
   position: relative;
+
+  &.surfers {
+    background-blend-mode: multiply;
+    background-image: url('../images/surfers.jpg');
+    background-position: 25px bottom;
+    background-size: 280px;
+    padding: $larger-spacing;
+  }
+
+  &.las-cruces {
+    background-blend-mode: multiply;
+    background-image: url('../images/las-cruces.jpg');
+    background-position: 100% center;
+    background-size: 200px;
+    padding: $large-spacing;
+  }
 }
 
 
