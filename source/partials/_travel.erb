@@ -1,5 +1,3 @@
-<% vehicle = item.vehicle || "car" %>
-
 <div class="travel">
 
   <time class="travel__time">
@@ -17,7 +15,7 @@
           alt: "dotted line",
         ) %>
 
-        <i class="fas fa-<%= vehicle %>"></i>
+        <i class="fas fa-<%= item.icon %>"></i>
 
         <%= inline_svg(
           "dotted-line.svg",

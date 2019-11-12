@@ -8,7 +8,7 @@
   </h2>
 
   <p class="overnight__address">
-    <%= item.address %>
+    <%= simple_format(item.address) %>
   </p>
 
   <% if item.link.present? %>

@@ -21,6 +21,22 @@
     background-size: 200px;
     padding: $large-spacing;
   }
+
+  &.marfa {
+    background-blend-mode: multiply;
+    background-image: url('../images/marfa2.jpg');
+    background-position: 20%;
+    background-size: 275px;
+    padding: $large-spacing;
+  }
+
+  &.nola {
+    background-blend-mode: multiply;
+    background-image: url('../images/nola1.jpg');
+    background-position: 25px bottom;
+    background-size: 280px;
+    padding: $larger-spacing;
+  }
 }
 
 
@@ -50,7 +66,7 @@
 .overnight__address {
   color: var(--secondary-text);
 
-  a {
+  a, + p {
     color: var(--secondary-text);
 
     &:visited {

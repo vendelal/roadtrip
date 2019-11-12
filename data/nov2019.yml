@@ -34,8 +34,8 @@ days:
 
       - type: travel
         icon: car
-        departure: 9:00 AM PST
-        arrival: 4:00 PM MST
+        departure: 8:30 AM PST
+        arrival: 3:30 PM MST
         travel_time: 6h
         link: https://flightaware.com/live/flight/UAL2304
         link_text: Directions
@@ -46,8 +46,8 @@ days:
 
       - type: travel
         icon: car
-        departure: 5:00 PM MST
-        arrival: 9:00 PM MST
+        departure: 4:00 PM MST
+        arrival: 8:00 PM MST
         travel_time: 4h
         link: https://www.google.com/maps/dir/Tucson,+AZ/SpringHill+Suites+by+Marriott+Las+Cruces,+Hickory+Loop,+Las+Cruces,+NM/@31.8649377,-110.0054359,8z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x86d665410b2ced2b:0x73c32d384d16c715!2m2!1d-110.9747108!2d32.2226066!1m5!1m1!1s0x86de16230583a2f9:0x8284eed96088e054!2m2!1d-106.791279!2d32.291487!3e0
         link_text: Directions
@@ -59,7 +59,7 @@ days:
       - type: overnight
         icon: moon
         title: "Overnight: Hotel in Las Cruces"
-        address: >
+        address: |
           Springhill Suites by Marriott 
           1611 Hickory Loop 
           Las Cruces, NM 88005
@@ -123,6 +123,8 @@ days:
           207 N. Highland
           Marfa, Texas  79843
           (432) 729-3669
+        link: http://hotelpaisano.com/
+        class_name: marfa
 
       - type: image
         src: /images/marfa1.jpeg
@@ -171,6 +173,9 @@ days:
         icon: moon
         title: "Overnight: Hotel in Houston"
 
+      - type: image
+        src: /images/houston.jpg
+
   - date: 2019-11-15
     items:
       - type: stop
@@ -191,6 +196,10 @@ days:
 
       - type: overnight
         title: Hang out in New Orleans for the weekend
+        class_name: nola
+
+      - type: image
+        src: /images/nola2.jpg
 
   - date: 2019-11-18
     items:
