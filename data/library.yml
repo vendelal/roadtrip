@@ -1,0 +1,16 @@
+# component: stop
+# stop_type: [departure, arrival, point]
+# stop_title: [plain text]
+
+
+- component_name: stop
+  type: departure
+  title: Kansas City
+
+- component_name: stop
+  type: departure
+  # title: Kansas City
+
+- component_name: travel
+
+- component_name: gallery

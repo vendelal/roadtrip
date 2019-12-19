@@ -1,0 +1,6 @@
+<% data.library.each do |component| %>
+  <%= partial(
+    "partials/components/#{component.component_name}",
+    locals: { item: component },
+  ) %>
+<% end %>
