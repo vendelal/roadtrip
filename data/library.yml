@@ -2,7 +2,6 @@
 # stop_type: [departure, arrival, point]
 # stop_title: [plain text]
 
-
 - component_name: stop
   type: departure
   title: Kansas City
@@ -11,6 +10,20 @@
   type: departure
   # title: Kansas City
 
-- component_name: travel
 
-- component_name: gallery
+# component: travel
+# travel_departure: [time]
+# travel_arrival: [time]
+# travel_link: [link]
+
+- component_name: travel
+  departure: 8:30
+  arrival: 15:30
+  link: https://www.google.com/maps/dir/Tucson,+AZ/SpringHill+Suites+by+Marriott+Las+Cruces,+Hickory+Loop,+Las+Cruces,+NM/@31.8649377,-110.0054359,8z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x86d665410b2ced2b:0x73c32d384d16c715!2m2!1d-110.9747108!2d32.2226066!1m5!1m1!1s0x86de16230583a2f9:0x8284eed96088e054!2m2!1d-106.791279!2d32.291487!3e0
+
+# - component_name: gallery
+
+
+# https://github.com/thoughtbot/thoughtbot.com/pull/2084/files
+
+# https://github.com/thoughtbot/thoughtbot.com-prototype/blob/master/data/library.yml

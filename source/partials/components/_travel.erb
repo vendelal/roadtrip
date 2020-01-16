@@ -1,0 +1,55 @@
+<div class="travel">
+
+  <time class="travel__time">
+    <%= item.departure %>
+  </time>
+
+    <div class="travel__duration-details">
+
+      <div class="travel__car-visual">
+
+        <%= inline_svg(
+          "dotted-line.svg",
+          role: "img",
+          aria_hidden: "true",
+          alt: "dotted line",
+        ) %>
+
+        <i class="fas fa-car"></i>
+
+        <%= inline_svg(
+          "dotted-line.svg",
+          role: "img",
+          aria_hidden: "true",
+          alt: "dotted line",
+        ) %>
+      </div>
+
+      <p class="travel__duration">
+        xyz
+      </p>
+
+      <% if item.link.present? && item.link_text.present? %>
+
+        <% link_to(
+          item.link,
+          target: "_blank",
+          class: "travel__directions-link",
+        ) do %>
+
+          <%= item.link_text %> <i class="fas fa-chevron-right"></i>
+
+        <% end %>
+
+      <% end %>
+
+    </div>
+
+  <time class="travel__time" datetime="<%= Time.at(item.arrival).iso8601 %>">
+    <%# time = Time.at(2020, 01, 16) %>
+    <%# time.getlocal %>
+
+    <%= Time.new(2019, 11, 12, 8, 30, 0).to_i %>
+  </time>
+
+</div>
