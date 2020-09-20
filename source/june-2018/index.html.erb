@@ -7,43 +7,26 @@ title: Roadtrip - June 2018
 <header>
   <h2>MATT &amp; VENDELA'S</h2>
   <h1>ROADTRIP</h1>
-  <h2>SAN DIEGO TO JACKSON HOLE</h2>
-  <date>JUNE 10-18, 2018</date>
+  <h2><%= data.jun2018.roadtrip_title %></h2>
+  <date><%= data.jun2018.travel_dates %></date>
 </header>
 
-<%= partial "itinerary/june-2018/day1" %>
+<% data.jun2018.days.each do |day| %>
 
-<%= partial "itinerary/june-2018/night1" %>
+  <section class="trip-segment">
+    <h2 class="trip-segment__date">
+      <%= day.date.strftime("%A, %b %d")  %>
+    </h2>
 
-<%= partial "itinerary/june-2018/day2" %>
+    <% day.items.each do |item| %>
+      <%= partial(
+        "partials/#{item.type}",
+        locals: { item: item },
+      ) %>
+    <% end %>
+  </section>
 
-<%= partial "itinerary/june-2018/night2" %>
-
-<%= partial "itinerary/june-2018/day3" %>
-
-<%= partial "itinerary/june-2018/night3" %>
-
-<%= partial "itinerary/june-2018/day4" %>
-
-<%= partial "itinerary/june-2018/night4" %>
-
-<%= partial "itinerary/june-2018/day5" %>
-
-<%= partial "itinerary/june-2018/night5" %>
-
-<%= partial "itinerary/june-2018/day6" %>
-
-<%= partial "itinerary/june-2018/night6" %>
-
-<%= partial "itinerary/june-2018/day7" %>
-
-<%= partial "itinerary/june-2018/night6" %>
-
-<%= partial "itinerary/june-2018/day8" %>
-
-<%= partial "itinerary/june-2018/night8" %>
-
-<%= partial "itinerary/june-2018/day9" %>
+<% end %>
 
 <footer>
   <i class="fas fa-home"></i>

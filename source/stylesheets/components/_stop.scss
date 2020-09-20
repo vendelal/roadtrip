@@ -6,6 +6,27 @@
 
    > svg {
     color: var(--stop-icon);
-    margin-right: $base-spacing;
+    margin-right: $small-spacing;
+  }
+}
+
+.stop__address {
+  color: var(--secondary-text);
+
+  a, + p {
+    color: var(--secondary-text);
+
+    &:visited {
+      color: var(--secondary-text);
+    }
+  }
+}
+
+.stop__time {
+  display: inline;
+
+  + p {
+    color: var(--tertiary-text);
+    display: inline;
   }
 }

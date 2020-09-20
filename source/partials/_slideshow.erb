@@ -1,0 +1,9 @@
+<section
+  class="trip-segment__image-container"
+  data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+
+  <% item.images each do |image| %>
+    <img src="../images/<%= image %>" />
+  <% end %>
+
+</section>

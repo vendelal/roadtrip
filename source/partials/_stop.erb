@@ -1,4 +1,19 @@
-<p class="stop">
+<div class="stop">
   <i class="fas fa-<%= item.icon %>"></i>
+
+  <% if item.time.present? %>
+    <p class="stop__time">
+      <%= simple_format(item.time) %>
+    </p>
+    <br />
+  <% end %>
+
   <%= item.title %>
-</p>
+
+  <% if item.address.present? %>
+    <br />
+    <p class="stop__address">
+      <%= simple_format(item.address) %>
+    </p>
+  <% end %>
+</div>
